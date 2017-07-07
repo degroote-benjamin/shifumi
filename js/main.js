@@ -3,10 +3,19 @@ var compteura = 0;
 var img = document.querySelectorAll(".img");
 var tab = ["pierre", "feuille", "ciseaux"]
 
+var name = document.getElementById("input").value;
+function start(){
+  var c = document.getElementById("hid")
+  var d = document.getElementById("none")
+  c.style.display = "none"
+  d.style.display = "block"
+  document.querySelector("#user").innerHTML= name + " :"
+}
+
+
 for (let i = 0; i < img.length; i++) {
     img[i].addEventListener("click", function() {
         var a = tab[i];
-
 // random
           var random = Math.random() * 3;
           if (random >= 0 && random <= 1) {
@@ -21,12 +30,12 @@ for (let i = 0; i < img.length; i++) {
 //comparaison
           if (a == "pierre" && random == "ciseaux" || a == "feuille" && random == "pierre" || a == "ciseaux" && random == "feuille") {
             compteura++
-            document.querySelector("#resultat").innerHTML = "Vous avez win"
+            document.querySelector("#resultat").innerHTML = "win"
           } else if (a == "ciseaux" && random == "pierre" || a == "pierre" && random == "feuille" || a == "feuille" && random == "ciseaux") {
             compteur++
-            document.querySelector("#resultat").innerHTML = "Vous avez loose"
+            document.querySelector("#resultat").innerHTML = "loose"
           } else if (a == random) {
-            document.querySelector("#resultat").innerHTML = "egalité"
+            document.querySelector("#resultat").innerHTML = "égalité"
           }
 
 

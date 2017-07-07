@@ -28,46 +28,53 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-<div class="container-fluid">
-  <div class="row">
-     <div class="col-12 d-flex justify-content-center align-items-center">
-        <a href="#" id="pierre"><img src="img/pierre.png" alt="" class="img-fluid img"></a>
-        <a href="#" id="papier"><img src="img/papier.png" alt="" class="img-fluid img"></a>
-        <a href="#" id="ciseaux"><img src="img/ciseaux.png" alt="" class="img-fluid img"></a>
-     </div>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="row">
+    <h1 class="text-center">Pierre / Papier / Ciseaux</h1>
+    <div class="container-fluid" id="hid">
+        <input type="text" id="input" name="" placeholder="Ton pseudo">
+        <button onclick="start()" class="input">Commencer !</button>
+    </div>
+    <div id="none">
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="#" id="pierre"><img src="img/pierre.png" alt="" class="img-fluid img"></a>
+                    <a href="#" id="papier"><img src="img/papier.png" alt="" class="img-fluid img"></a>
+                    <a href="#" id="ciseaux"><img src="img/ciseaux.png" alt="" class="img-fluid img"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
 
 
-    <div class="col-3 d-flex justify-content-center align-items-center flex-wrap">
-      <h2 class="col-12 my-3">Utilisateur : <br></h2>
-      <p id="resultata"></p>
+                <div class="col-3 d-flex justify-content-center align-items-center flex-wrap">
+                    <h6 class="col-12 my-3" id="user"></h6>
+                    <p id="resultata"></p>
+                </div>
+
+
+                <div class="col-6 row">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <p id="compta"></p>
+                    </div>
+                    <div class="col-8 d-flex justify-content-center align-items-center">
+                        <p id="resultat"></p>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <p id="compt"></p>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex justify-content-center align-items-center flex-wrap">
+                    <h6 class="my-3 col-12">Ordi :<br></h6>
+                    <p id="resultatb"></p>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
-
-    <div class="col-6 row">
-      <div class="col-2 d-flex justify-content-center align-items-center">
-        <p id="compta"></p>
-      </div>
-      <div class="col-8 d-flex justify-content-center align-items-center">
-        <p id="resultat"></p>
-      </div>
-      <div class="col-2 d-flex justify-content-center align-items-center">
-        <p id="compt"></p>
-      </div>
-    </div>
-
-    <div class="col-3 d-flex justify-content-center align-items-center flex-wrap">
-      <h2 class="my-3 col-12">Ordi : <br></h2>
-      <p id="resultatb"></p>
-    </div>
-
-    </div>
-  </div>
-
-</div>
 
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

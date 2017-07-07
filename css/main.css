@@ -98,6 +98,22 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#none{
+  display: none;
+}
+
+#hid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  padding: 20px;
+  margin-left: 15px;
+  border-radius: 100%;
+  background-color: white;
+}
 
 .img1 , .img{
     width: 90px;
