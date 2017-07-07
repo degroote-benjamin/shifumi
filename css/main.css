@@ -98,11 +98,28 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-p{
-  margin: 0;
-  font-size: 30px;
-  font-weight: bolder
+
+.img1 , .img{
+    width: 90px;
+    height: 200px;
 }
+
+body {
+    background-color: lightblue;
+}
+
+@media (min-width:720px) {
+    p {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bolder
+    }
+    .img1, .img {
+        width: 150px;
+        height: 290px;
+    }
+}
+
 
 /* ==========================================================================
    Helper classes
