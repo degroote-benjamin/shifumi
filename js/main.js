@@ -1,12 +1,16 @@
 var compteur = 0;
 var compteura = 0;
+var c = document.getElementById("hid")
+var d = document.getElementById("none")
 var img = document.querySelectorAll(".img");
 var tab = ["pierre", "feuille", "ciseaux"]
-
+var final = document.getElementById("final")
 var name = document.getElementById("input").value;
+
+// function for choose pseudo and hide the start button
+
+
 function start(){
-  var c = document.getElementById("hid")
-  var d = document.getElementById("none")
   c.style.display = "none"
   d.style.display = "block"
   document.querySelector("#user").innerHTML= name + " :"
@@ -72,6 +76,17 @@ else {
           document.querySelector("#compt").innerHTML = compteur
 
 
+// Final
+          if(compteur === 3){
+           d.style.display = "none"
+          final.style.display = "flex"
+          document.getElementById("h2").innerHTML= "Victoire"
+          }
+          else if(compteura === 3){
+            d.style.display = "none"
+            final.style.display = "flex"
+          document.getElementById("h2").innerHTML= "DEFAITE"
+          }
 
     })
 }
