@@ -47,28 +47,13 @@ for (let i = 0; i < img.length; i++) {
 
 // img user
 
-if(a == "pierre"){
-   document.querySelector("#resultata").innerHTML = '<img src="img/pierre.png" alt="" class="img1">'
-}
-else if (a=="feuille"){
-   document.querySelector("#resultata").innerHTML = '<img src="img/papier.png" alt="" class="img1">'
-}
-else {
-   document.querySelector("#resultata").innerHTML = '<img src="img/ciseaux.png" alt="" class="img1">'
-}
+document.querySelector("#resultata").innerHTML = '<img src="img/' + a+ '.png" alt="" class="img1">'
 
 
 // img bot
 
-if(random == "pierre"){
-   document.querySelector("#resultatb").innerHTML = '<img src="img/pierre.png" alt="" class="img1">'
-}
-else if (random =="feuille"){
-   document.querySelector("#resultatb").innerHTML = '<img src="img/papier.png" alt="" class="img1">'
-}
-else {
-   document.querySelector("#resultatb").innerHTML = '<img src="img/ciseaux.png" alt="" class="img1">'
-}
+   document.querySelector("#resultatb").innerHTML = '<img src="img/' + random+ '.png" alt="" class="img1">'
+
 
 
 // write in html
